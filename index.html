@@ -1,0 +1,51 @@
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+
+
+<body>
+
+<header >
+  <h1>Diário de um Banana 2</h1>
+  <h2>Rodrick é o Cara - Uma Síntese</h2>
+</header>
+
+<div class="content-box">
+  <div class="intro-container">
+    <div class="intro-text">
+      <h2>Sinopse</h2>
+      <p>O segundo livro da série " O diário de um banana" tem como subtitulo "Rodrick é o cara", isso porque a história vai se desenvolver em torno de conflitos dentro da família, mais precisamente conflito com o irmão mais velho, o que sempre acontece , já que irmão brigam por natureza. Como Greg está crescendo Rodrick seu irmão mais velho começa a irritá-lo com várias coisas, e isso faz com que eles briguem muito, até que um dia os pais decidem viajar, e os dois sozinhos em casa dão uma festa, e a partir daí conseguem começar a se 
+        entender melhor. Porém quando os pais voltam Greg sem querer acaba falando pra mãe que deram uma festa em casa e aí todas as brigas voltam ao normal.</p>
+    <img src="diario_de_um_banana_v_2_rodrick_e_o_cara_289_1_badfc0355171681eeaec7c5ec071fb8d.webp" alt="" width="500" height="300">
+</div>
+
+  <div class="section">
+    <h2>Sobre o livro</h2>
+    <p>"Diário de um Banana 2: Rodrick é o Cara" surgiu como a sequência do sucesso de Diário de um Banana, publicado em 2007. Após o sucesso do primeiro livro, Jeff Kinney, o autor, percebeu a alta demanda por mais histórias sobre Greg Heffley e sua vida cotidiana. O segundo livro foca na relação de Greg com seu irmão mais velho, Rodrick, e as situações engraçadas e complicadas que surgem dessa convivência.<br>
+      A ideia principal do livro é explorar o lado sarcástico e bagunçado desenvolvimento entre os dois irmãos, especialmente com Rodrick sendo o "bad boy" da família. O sucesso do primeiro livro levou o Kinney a dar continuidade à série, que rapidamente se tornou um sucesso entre os leitores jovens. O estilo de narração, com ilustrações engraçadas, seguiu sendo um grande agrado para o público.
+    </p>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.section, .intro-text');
+  
+  function checkScroll() {
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      
+      if (sectionTop < windowHeight * 0.75) {
+        section.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkScroll);
+  checkScroll();
+});
+</script>
+
+</body>
+</html>
